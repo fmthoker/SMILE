@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="A data efficient method for  video self-supervised learning">
+  <meta name="keywords" content="Tubelet contrastive,Video Self-supervised Learning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tubelet Contrastive Learning</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script> -->
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+  <link rel="icon" href="./static/images/uva.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://bpiyush.github.io">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://ivi.fnwi.uva.nl/vislab/">
+            VISLab, UvA
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Tubelet-Contrastive Self-Supervision for Video-Efficient Generalization</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://fmthoker.github.io/">Fida Mohammad Thoker</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://hazeldoughty.github.io/">Hazel Doughty</a><sup>1</sup>,</span>  
+            <span class="author-block">
+              <a href="https://www.ceessnoek.info/">Cees Snoek</a><sup>1</sup></span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>University of Amsterdam</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2303.11003"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Thoker_Tubelet-Contrastive_Self-Supervision_for_Video-Efficient_Generalization_ICCV_2023_paper.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video (coming soon)</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/fmthoker/tubelet-contrast"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <!-- <span class="link-block">
+                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a> -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./assets/media/teaser.png " alt="teaser" style="width:100%;  padding-top:1%;"/>
+      <h2 class="subtitle has-text-justified">
+We propose a self-supervised method for learning motion-focused video representations. Existing approaches minimize distances between temporally augmented videos, which maintain high spatial similarity. We instead propose to learn similarities between videos with identical local motion dynamics but an otherwise different appearance. We do so by adding synthetic motion trajectories to videos which we refer to as tubelets. Tubelet-Contrastive positive pairs (right)  only share the spatiotemporal motion dynamics inside the simulated tubelets, while temporal contrastive pairs (left)  suffer from a high spatial bias. Contrasting tubelets results in a data-efficient and generalizable video representation.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method Overview</h2>
+        <div class="content has-text-justified">
+          <p>We propose tubeletcontrastive learning to reduce the spatial focus of video representations and instead learn similarities between spatiotemporal tubelet dynamics. We encourage our learned representation to be motion-focused by simulating a variety of tubelet motions. To further improve the data efficiency and generalizability of our method, we add complexity and variety to the motions through tubelet transformations. Figures below  show an overview of our proposed approach and tubelet motion and transformations.<p>
+          <img src="./assets/media/method_overview.png " alt="method" style="width:100%; padding-top:1%;"/>  
+          <img src="./assets/media/motion-trans.png " alt="motion-trans" style="width:100%; padding-top:2%;"/>  
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div> -->
+    <!--/ Paper video. -->
+
+    <!-- Highlights. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Highlights</h2>
+        <div class="content has-text-justified">
+          <p>
+            We summarize the key observations from our experiments below.
+          </p>
+
+        <div>
+          <h3 class="title is-4">I. Main Ablation </h3>
+          <div class="observations domain">
+            <p> We  demonstrate the impact of each component in  our tubelet-contrastive learning.  It is clear that the motion within tubelets is critical to our model’s success as contrasting static tubelets obtained from our tubelet generation  actually decreases the performance from the temporal contrast baseline. When
+tubelet motion is added, performance improves considerably, Finally, adding more motion types via tubelet transformations further improves the video representation quality. This highlights the importance of including a variety of motions beyond what is present in the pretraining data to learn generalizable video representations.
+            </p>
+          <img src="./assets/media/ablation.png " alt="ablation" style="width:100%; "/>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="title is-4">II. Motion Focus</h3>
+          <div class="observations samples">
+            <p> To understand what our model learns, we visualize the class agnostic activation maps  of various downsteram datasets without any finetuning for the temporal contrastive baseline and our approach. Without previously seeing any of the data, we observe that our approach attends regions with motion while the temporal contrastive baseline mostly attends to the background.
+            </p>
+          <img src="./assets/media/grad-cam.png " alt="grad-cam" style="width:100%; "/>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="title is-4">III. Video-Data Efficiency</h3>
+          <div class="observations actions">
+            <p> To demonstrate our method’s data efficiency, we pretrain using subsets of the Kinetics-400 training data. In
+particular, we sample 5%, 10%, 25%, 33% and 50% of the Kinetics-400 training set with three different seeds and use
+this to pretrain our model and the temporal contrastive baseline. We compare the effectiveness of these representations after finetuning on 5 different donwstream setups. On all downstream setups, our method maintains similar performance when reducing the pretraining data to just 25%, while the temporal contrastive baseline performance decreases significantly.
+            </p>
+          <img src="./assets/media/data-eff.png " alt="data-eff" style="width:100%; "/>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="title is-4">IV.SEVERE Generalization Benchmark</h3>
+          <div class="observations tasks">
+            <p> We compare to prior works on the challenging <a href="https://bpiyush.github.io/SEVERE-website/">SEVERE benchmark </a>, which evaluates video representations for generalizability in domain shift, sample efficiency, action granularity, and task shift. We compare the mean and the average rank across all generalizability factors. Our method has the best mean performance (66.5) and achieves the best average rank (4.1). When pretraining with the 3x smaller Mini-Kinetics our approach still achieves impressive results. We conclude our method improves the generalizability of video self-supervised representations across these four downstream factors while being data-efficient.
+            </p>
+          <img src="./assets/media/severe-expts.png " alt="severe" style="width:100%; "/>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+    <!--/ Highlights. -->
+
+
+  </div>
+</section>
+
+
+
+<style>
+  .observations {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 3%;
+  }
+  .domain {
+    background: #FFFFFF;
+  }
+  .samples {
+    background: #FFFFFF;
+  }
+  .actions {
+    background: #FFFFFF;
+  }
+  .tasks {
+    background: #FFFFFF;
+  }
+</style>
+
+<!-- <section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered"> -->
+
+    <!-- Concurrent Work. -->
+    <!-- <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Related Links</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            There's a lot of excellent work that was introduced around the same time as ours.
+          </p>
+        </div>
+      </div>
+    </div> -->
+    <!--/ Concurrent Work. -->
+
+  <!-- </div>
+</section> -->
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{thoker2023tubelet,
+  author    = {Thoker, Fida Mohammad and Doughty, Hazel  and Snoek, Cees},
+  title     = {Tubelet-Contrastive Self-Supervision for Video-Efficient Generalization},
+  journal   = {ICCV},
+  year      = {2023},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://arxiv.org/pdf/2203.14221.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/fmthoker/tubelet-contrast" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This website is based on the template from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>. We sincerely thank <a href="https://keunhong.com/">Keunhong Park</a> for developing and open-sourcing this template.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
