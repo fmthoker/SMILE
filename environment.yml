@@ -256,4 +256,4 @@ dependencies:
       - transformers==4.31.0
       - ftfy
       - easydict
-      - matplotlib=3.10.0
+      - matplotlib==3.10.0
