@@ -2,29 +2,16 @@
 
 ![SMILE Framework](figs/videomae.jpg)
 
-[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)<br>
-[![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-blue)](https://huggingface.co/models?other=videomae)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)<br>
+[![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-blue)](https://huggingface.co/fmthoker/SMILE)
 
 
-> [**VideoMAE: Masked Autoencoders are Data-Efficient Learners for Self-Supervised Video Pre-Training**](https://arxiv.org/abs/2203.12602)<br>
-> [Zhan Tong](https://github.com/yztongzhan), [Yibing Song](https://ybsong00.github.io/), [Jue Wang](https://juewang725.github.io/), [Limin Wang](http://wanglimin.github.io/)<br>Nanjing University, Tencent AI Lab
+> [**SMILE: Infusing Spatial and Motion Semantics in Masked Video Learning**](https://arxiv.org/abs/2504.00527)<br>
+> [Fida Mohammad Thoker](https://fmthoker.github.io/), [Letian Jiang](https://tonnew5418.github.io/), [Chen Zhao](https://zhao-chen.com/), [Bernard Ghanem](https://cemse.kaust.edu.sa/profiles/bernard-ghanem)<br>King Abdullah University of Science and Technology (KAUST)
 
 ## 📰 News
-**[2023.4.18]** 🎈Everyone can download **Kinetics-400**, which is used in VideoMAE, from [this link](https://opendatalab.com/Kinetics-400).<br>
-**[2023.4.18]** Code and pre-trained models of [VideoMAE V2](https://arxiv.org/abs/2303.16727) have been released! Check and enjoy this [repo](https://github.com/OpenGVLab/VideoMAEv2)!<br>
-**[2023.4.17]** We propose **[EVAD](https://arxiv.org/abs/2304.08451)**, an **end-to-end Video Action Detection** framework.<br>
-**[2023.2.28]** Our [VideoMAE V2](https://arxiv.org/abs/2303.16727) is accepted by **CVPR 2023**! 🎉<br>
-**[2023.1.16]** Code and pre-trained models for **Action Detection** in VideoMAE are [available](https://github.com/MCG-NJU/VideoMAE-Action-Detection)! <br>
-**[2022.12.27]** 🎈Everyone can download extracted **VideoMAE** features of **THUMOS**, **ActivityNet**, **HACS** and **FineAction** from [InternVideo](https://github.com/OpenGVLab/InternVideo/tree/main/Downstream/Temporal-Action-Localization#to-reproduce-our-results-of-internvideo).<br>
-**[2022.11.20]** 👀 VideoMAE is integrated into [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/sayakpaul/video-classification-ucf101-subset) and [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/huggingface/notebooks/blob/main/examples/video_classification.ipynb), supported by [@Sayak Paul](https://github.com/sayakpaul).<br>
-**[2022.10.25]** 👀 VideoMAE is integrated into [MMAction2](https://github.com/open-mmlab/mmaction2/tree/dev-1.x/configs/recognition/videomae), the results  on Kinetics-400 can be reproduced successfully. <br>
-**[2022.10.20]** The pre-trained models and scripts of **ViT-S** and **ViT-H** are available! <br>
-**[2022.10.19]** The pre-trained models and scripts on **UCF101** are [available](MODEL_ZOO.md#UCF101)! <br>
-**[2022.9.15]** VideoMAE is accepted by **NeurIPS 2022** as a **spotlight** presentation! 🎉 <br>
-**[2022.8.8]** 👀 VideoMAE is integrated into **official** [🤗HuggingFace Transformers](https://huggingface.co/docs/transformers/main/en/model_doc/videomae) now! [![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-blue)](https://huggingface.co/models?other=videomae)<br>
-**[2022.7.7]**  We have updated new results on downstream AVA 2.2 benchmark. Please refer to our [paper](https://arxiv.org/abs/2203.12602) for details. <br>
-**[2022.4.24]**  Code and pre-trained models are available now! <br>
-**[2022.3.24]** ~~Code and pre-trained models will be released here.~~ Welcome to **watch** this repository for the latest updates.
+<!-- **[2022.4.24]**  Code and pre-trained models are available now! <br> -->
+**[2025.5.28]** Code and pre-trained models will be released here. Welcome to **watch** this repository for the latest updates.
 
 ## ✨ Highlights
 
