@@ -1,6 +1,6 @@
 # Official PyTorch Implementation of SMILE (CVPR 2025).
 
-![SMILE Framework](figs/videomae.jpg)
+![SMILE Framework](figs/smile.jpg)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)<br>
 [![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-blue)](https://huggingface.co/fmthoker/SMILE/tree/main/SMILE_MODELS)
