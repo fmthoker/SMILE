@@ -102,8 +102,8 @@ Zhan Tong: tongzhan@smail.nju.edu.cn
 
 ## 👍 Acknowledgements
 
-Thanks to [Ziteng Gao](https://sebgao.github.io/), Lei Chen, [Chongjian Ge](https://chongjiange.github.io/), and [Zhiyu Zhao](https://github.com/JerryFlymi) for their kind support.<br>
-This project is built upon [MAE-pytorch](https://github.com/pengzhiliang/MAE-pytorch) and [BEiT](https://github.com/microsoft/unilm/tree/master/beit). Thanks to the contributors of these great codebases.
+We sincerely thank [Michael Dorkenwald](https://mdorkenwald.com/) for providing the object image dataset that supports this work.<br>
+This project is built upon [VideoMAE](https://github.com/MCG-NJU/VideoMAE) and [tubelet-contrast](https://github.com/fmthoker/tubelet-contrast). Thanks to the contributors of these great codebases.
 
 ## 🔒 License
 
