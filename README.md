@@ -3,7 +3,7 @@
 ![SMILE Framework](figs/videomae.jpg)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)<br>
-[![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-blue)](https://huggingface.co/fmthoker/SMILE)
+[![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-blue)](https://huggingface.co/fmthoker/SMILE/tree/main/SMILE_MODELS)
 
 
 > [**SMILE: Infusing Spatial and Motion Semantics in Masked Video Learning**](https://arxiv.org/abs/2504.00527)<br>
@@ -88,17 +88,9 @@ The pre-training instruction is in [PRETRAIN.md](PRETRAIN.md).
 
 The fine-tuning instruction is in [FINETUNE.md](FINETUNE.md).
 
-## 📍Model Zoo
-
-We provide pre-trained and fine-tuned models in [MODEL_ZOO.md](MODEL_ZOO.md).
-
-## 👀 Visualization
-
-We provide the script for visualization in [`vis.sh`](vis.sh).  Colab notebook for better visualization is coming soon.
-
 ## ☎️ Contact 
 
-Zhan Tong: tongzhan@smail.nju.edu.cn
+Fida Mohammad Thoker: fida.thoker@kaust.edu.sa
 
 ## 👍 Acknowledgements
 
@@ -107,24 +99,17 @@ This project is built upon [VideoMAE](https://github.com/MCG-NJU/VideoMAE) and [
 
 ## 🔒 License
 
-The majority of this project is released under the CC-BY-NC 4.0 license as found in the [LICENSE](https://github.com/MCG-NJU/VideoMAE/blob/main/LICENSE) file. Portions of the project are available under separate license terms: [SlowFast](https://github.com/facebookresearch/SlowFast) and [pytorch-image-models](https://github.com/rwightman/pytorch-image-models) are licensed under the Apache 2.0 license. [BEiT](https://github.com/microsoft/unilm/tree/master/beit) is licensed under the MIT license.
+This project is released under the MIT license. For more details, please refer to the [LICENSE](https://github.com/fmthoker/SMILE/blob/main/LICENSE) file.
 
 ## ✏️ Citation
 
 If you think this project is helpful, please feel free to leave a star⭐️ and cite our paper:
 
 ```
-@inproceedings{tong2022videomae,
-  title={Video{MAE}: Masked Autoencoders are Data-Efficient Learners for Self-Supervised Video Pre-Training},
-  author={Zhan Tong and Yibing Song and Jue Wang and Limin Wang},
-  booktitle={Advances in Neural Information Processing Systems},
-  year={2022}
-}
-
-@article{videomae,
-  title={VideoMAE: Masked Autoencoders are Data-Efficient Learners for Self-Supervised Video Pre-Training},
-  author={Tong, Zhan and Song, Yibing and Wang, Jue and Wang, Limin},
-  journal={arXiv preprint arXiv:2203.12602},
-  year={2022}
+@inproceedings{thoker2025smile,
+  author    = {Thoker, Fida Mohammad and Jiang, Letian and Zhao, Chen and Ghanem, Bernard},
+  title     = {SMILE: Infusing Spatial and Motion Semantics in Masked Video Learning},
+  journal   = {CVPR},
+  year      = {2025},
 }
 ```
