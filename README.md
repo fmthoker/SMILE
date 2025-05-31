@@ -60,7 +60,15 @@ The pre-training instruction is in [PRETRAIN.md](PRETRAIN.md).
 
 ## ⤴️ Fine-tuning with pre-trained models
 
-The fine-tuning instruction is in [FINETUNE.md](FINETUNE.md).
+Following the [VideoMAE finetuning guide](https://github.com/MCG-NJU/VideoMAE/blob/main/FINETUNE.md), we provide scripts for finetuning on the SSv2 and K400 datasets using the ViT-Base model. You can find the scripts here: [scripts/finetune/](./scripts/finetune)
+
+Our experiments were conducted using 4 V100(32 GB) GPUs.
+
+If you wish to perform your own finetuning, make sure to update the following parameters in the script:
+
+- `DATA_PATH`: path to your dataset  
+- `MODEL_PATH`: path to the pretrained model  
+- `OUTPUT_DIR`: directory to save the output results
 
 ## ☎️ Contact 
 
