@@ -56,19 +56,32 @@ Please follow the instructions in [DATASET.md](DATASET.md) for data preparation.
 
 ## 🔄 Pre-training
 
-The pre-training instruction is in [PRETRAIN.md](PRETRAIN.md).
+Following the [VideoMAE pre-training guide](https://github.com/MCG-NJU/VideoMAE/blob/main/PRETRAIN.md), we provide scripts for pre-training on the Kinetics-400 (K400) dataset using the ViT-Base model:  [scripts/pretrain/](./scripts/pretrain/)
 
-## ⤴️ Fine-tuning with pre-trained models
+As described in the paper, we adopt a two-stage training strategy. Please refer to the script names to identify which stage to run.
 
-Following the [VideoMAE finetuning guide](https://github.com/MCG-NJU/VideoMAE/blob/main/FINETUNE.md), we provide scripts for finetuning on the SSv2 and K400 datasets using the ViT-Base model. You can find the scripts here: [scripts/finetune/](./scripts/finetune)
+> **Note:** Our pre-training experiments were conducted using 8 V100(32 GB) GPUs.
 
-Our experiments were conducted using 4 V100(32 GB) GPUs.
+If you wish to perform your own pre-training, make sure to update the following parameters in the script:
 
-If you wish to perform your own finetuning, make sure to update the following parameters in the script:
+- `DATA_PATH`: Path to your dataset  
+- `OUTPUT_DIR`: Directory to save output results  
+- `OBJECTS_PATH`: Path to the object image dataset  
 
-- `DATA_PATH`: path to your dataset  
-- `MODEL_PATH`: path to the pretrained model  
-- `OUTPUT_DIR`: directory to save the output results
+---
+
+## ⤴️ Fine-tuning with Pre-trained Models
+
+Following the [VideoMAE finetuning guide](https://github.com/MCG-NJU/VideoMAE/blob/main/FINETUNE.md), we provide scripts for fine-tuning on the Something-Something v2 (SSv2) and Kinetics-400 (K400) datasets using the ViT-Base model:  [scripts/finetune/](./scripts/finetune)
+
+> **Note:** Our finetuning experiments were conducted using 4 V100(32 GB) GPUs.
+
+To perform your own fine-tuning, please update the following parameters in the script:
+
+- `DATA_PATH`: Path to your dataset  
+- `MODEL_PATH`: Path to the pre-trained model  
+- `OUTPUT_DIR`: Directory to save output results  
+
 
 ## ☎️ Contact 
 
