@@ -52,7 +52,8 @@ Please follow the instructions in [INSTALL.md](INSTALL.md).
 
 ## ➡️ Data Preparation
 
-Please follow the instructions in [DATASET.md](DATASET.md) for data preparation.
+We follow [VideoMAE Data preparation](https://github.com/MCG-NJU/VideoMAE/blob/main/DATASET.md) to prepare our datasets (K400 and SSv2). Here we provide our annotation files for those two datasets: [annotation_files](annotation_files)
+
 
 ## 🔄 Pre-training
 
