@@ -10,7 +10,7 @@
 > [Fida Mohammad Thoker](https://fmthoker.github.io/), [Letian Jiang](https://tonnew5418.github.io/), [Chen Zhao](https://zhao-chen.com/), [Bernard Ghanem](https://cemse.kaust.edu.sa/profiles/bernard-ghanem)<br>King Abdullah University of Science and Technology (KAUST)
 
 ## 📰 News
-<!-- **[2022.4.24]**  Code and pre-trained models are available now! <br> -->
+**[2025.6.2]**  Code and pre-trained models are available now! <br>
 **[2025.5.28]** Code and pre-trained models will be released here. Welcome to **watch** this repository for the latest updates.
 
 ## ✨ Highlights
