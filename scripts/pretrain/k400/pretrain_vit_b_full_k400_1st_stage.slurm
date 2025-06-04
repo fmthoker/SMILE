@@ -28,6 +28,14 @@ OBJECTS_PATH='/ibex/user/thokerfm/datasets/micheal_objects/cleaned/images'
 OUTPUT_DIR='expirements/VIT_BASE/k400_smile_pretraining_first_stage'
 
 
+#Notes
+
+# For 600 epoch training we run the first stage training for 150 epochs (effectively equals to 300 epochs, as we use multiple sampling).
+
+# For 1200 epoch training we run the first stage training for 400 epochs (effectively equals to 800 epochs, as we use multiple sampling).
+
+# We use early stopping and use the exact following hyper parameters 
+
 source activate fgvssl
 
 JOB_NAME=$1
