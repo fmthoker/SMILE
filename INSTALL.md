@@ -16,9 +16,9 @@ conda env create -f environment.yml
 ```bash
 conda activate smile
 ```
-4. **Download CLIP weights (Optional)**
+4. **Download CLIP weights (Optional, only required for pretraining)** 
 ```bash
 mkdir clip_weights
 ```
-If you plan to pretrain from scratch, please download the [CLIP weights](https://huggingface.co/fmthoker/SMILE/resolve/main/clip_weights/ViT-B-16.pt) and place them in the `clip_weights` folder created above.
+For pretraining, please download the [CLIP weights](https://huggingface.co/fmthoker/SMILE/resolve/main/clip_weights/ViT-B-16.pt) and place them in the `clip_weights` folder created above.
 

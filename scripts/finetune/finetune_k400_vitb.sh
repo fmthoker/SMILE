@@ -3,7 +3,7 @@ DATA_PATH='/home/thokerfm/kinetics_from_ivi/labels'
 # Set the path to save checkpoints
 export MODEL_PATH="/path_to_pretrained_checkpoint_folder/checkpoint-800.pth"
 
-export OUTPUT_DIR='../expirements_finetune_colormae/VIT_BASE/finetune_kinetics_400/eval_lr_1e-3_4gpus_update_freq_1'
+export OUTPUT_DIR='../expirements_finetune/VIT_BASE/finetune_kinetics_400/eval_lr_1e-3_4gpus_update_freq_1'
 
 OMP_NUM_THREADS=1 python -m torch.distributed.launch --nproc_per_node=4 \
         --master_port 12319  run_class_finetuning.py \
