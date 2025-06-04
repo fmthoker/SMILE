@@ -19,8 +19,14 @@ export NCCL_P2P_DISABLE=1
 export NCCL_IB_DISABLE=1
 export NCCL_TIMEOUT=300
 
+# path to pretraining file
 DATA_PATH='/ibex/user/thokerfm/datasets/kinetics_from_ivi/labels/train.csv'
-OUTPUT_DIR='/ibex/user/thokerfm/expirements_pretrain_smile/VIT_BASE/IVI_data_full_k400_clip_baseline_mask_80_multiple_sampling_2stage_lr1.5e-4_from_150'
+
+# path to the ckpt from first pretraining stage
+FIRST_STAGE_CKPT='./test_run/checkpoint-0.pth'
+
+# path to output ckpt dierectory
+OUTPUT_DIR='expirements/VIT_BASE/k400_smile_pretraining_2nd_stage'
 
 source activate fgvssl
 
@@ -58,4 +64,4 @@ srun -p --job-name=${JOB_NAME} \
         --log_dir ${OUTPUT_DIR} \
         --output_dir ${OUTPUT_DIR} \
         --multiple_sampling  \
-        --finetune /ibex/user/thokerfm/expirements_pretrain_smile/VIT_BASE/IVI_data_full_k400_clip_motion_mask_80_traj_20_multiple_sampling/checkpoint-150.pth
+        --first_stage_path ${FIRST_STAGE_CKPT} \

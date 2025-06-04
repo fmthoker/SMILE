@@ -18,12 +18,15 @@ export NCCL_P2P_DISABLE=1
 export NCCL_IB_DISABLE=1
 export NCCL_TIMEOUT=300
 
+# path to to pretraining file
 DATA_PATH='/ibex/user/thokerfm/datasets/kinetics_from_ivi/labels/train.csv'
 
-OUTPUT_DIR='/ibex/user/thokerfm/expirements_pretrain_smile/VIT_BASE/IVI_data_full_k400_clip_motion_mask_80_traj_20_multiple_sampling'
-OUTPUT_DIR='./test_run'
+# path to folder containing object categories
+OBJECTS_PATH='/ibex/user/thokerfm/datasets/micheal_objects/cleaned/images'
 
-OBJECTS_PATH='/ibex/user/jianl0b/Dataset/Fida_file_1/video_images/micheal_objects/cleaned/images'
+# path to output ckpt dierectory
+OUTPUT_DIR='expirements/VIT_BASE/k400_smile_pretraining_first_stage'
+
 
 source activate fgvssl
 

@@ -128,7 +128,6 @@ def get_args():
     parser.add_argument('--objects_path', type=str, default=None)
     parser.add_argument('--motion_type', type=str, default='gaussian')
     parser.add_argument('--scales', type=str, default='[32, 48, 56, 64, 96, 128]')
-    parser.add_argument('--loc_velocity', type=int, default=12)
     parser.add_argument('--visible_frames', type=str, default=None) # not used
     parser.add_argument('--traj_unmask_ratio', type=float, default=0.1)
 

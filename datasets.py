@@ -39,7 +39,7 @@ class DataAugmentationForVideoMAE(object):
                         num_rois=2,
                     ),
                     key_frame_probs=[0.5, 0.3, 0.2],
-                    loc_velocity=args.loc_velocity,
+                    loc_velocity=12,
                     rot_velocity=6,
                     size_velocity=0.025,
                     label_prob=1.0,
