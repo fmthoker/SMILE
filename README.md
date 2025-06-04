@@ -63,11 +63,12 @@ Following the [VideoMAE pre-training guide](https://github.com/MCG-NJU/VideoMAE/
 
 As described in the paper, we adopt a two-stage training strategy. Please refer to the script names to identify which stage to run.
 
-If you wish to perform your own pre-training, make sure to update the following parameters in the script:
+If you wish to perform your own pre-training, make sure to update the following parameters in the scripts:
 
 - `DATA_PATH`: Path to your dataset  
 - `OUTPUT_DIR`: Directory to save output results  
 - `OBJECTS_PATH`: Path to the overlaying objects image dataset   (image data to be released)
+- `FIRST_STAGE_CKPT`: Path to the ckpt from first stage pretraining ( for second stage training)
 
 > **Note:** Our pre-training experiments were conducted using 8 V100(32 GB) GPUs.
 ---
