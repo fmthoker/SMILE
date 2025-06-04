@@ -52,7 +52,7 @@ Please follow the instructions in [INSTALL.md](INSTALL.md).
 
 ## ➡️ Data Preparation
 
-We follow [VideoMAE Data preparation](https://github.com/MCG-NJU/VideoMAE/blob/main/DATASET.md) to prepare our datasets (K400 and SSv2). Here we provide our annotation files for those two datasets: [annotation_files](annotation_files)
+We follow [VideoMAE Data preparation](https://github.com/MCG-NJU/VideoMAE/blob/main/DATASET.md) to prepare our datasets (K400 and SSv2). Here we provide our annotation files for those two datasets: [annotation_files](annotation_files). For pretraining, we use training sets (train.csv).
 
 
 ## 🔄 Pre-training
@@ -61,21 +61,19 @@ Following the [VideoMAE pre-training guide](https://github.com/MCG-NJU/VideoMAE/
 
 As described in the paper, we adopt a two-stage training strategy. Please refer to the script names to identify which stage to run.
 
-> **Note:** Our pre-training experiments were conducted using 8 V100(32 GB) GPUs.
-
 If you wish to perform your own pre-training, make sure to update the following parameters in the script:
 
 - `DATA_PATH`: Path to your dataset  
 - `OUTPUT_DIR`: Directory to save output results  
-- `OBJECTS_PATH`: Path to the object image dataset  
+- `OBJECTS_PATH`: Path to the overlaying objects image dataset   (image data to be released)
 
+> **Note:** Our pre-training experiments were conducted using 8 V100(32 GB) GPUs.
 ---
 
 ## ⤴️ Fine-tuning with Pre-trained Models
 
 Following the [VideoMAE finetuning guide](https://github.com/MCG-NJU/VideoMAE/blob/main/FINETUNE.md), we provide scripts for fine-tuning on the Something-Something v2 (SSv2) and Kinetics-400 (K400) datasets using the ViT-Base model:  [scripts/finetune/](./scripts/finetune)
 
-> **Note:** Our finetuning experiments were conducted using 4 V100(32 GB) GPUs.
 
 To perform your own fine-tuning, please update the following parameters in the script:
 
@@ -83,6 +81,7 @@ To perform your own fine-tuning, please update the following parameters in the s
 - `MODEL_PATH`: Path to the pre-trained model  
 - `OUTPUT_DIR`: Directory to save output results  
 
+> **Note:** Our finetuning experiments were conducted using 4 V100(32 GB) GPUs.
 
 ## ☎️ Contact 
 
