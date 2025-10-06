@@ -6,10 +6,11 @@
 [![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-blue)](https://huggingface.co/fmthoker/SMILE/tree/main/SMILE_MODELS)
 
 
-> [**SMILE: Infusing Spatial and Motion Semantics in Masked Video Learning**](https://arxiv.org/abs/2504.00527)<br>
+> [**SMILE: Infusing Spatial and Motion Semantics in Masked Video Learning**](https://huggingface.co/datasets/mdorkenw/PIN_Synthetic_Dataset)<br>
 > [Fida Mohammad Thoker](https://fmthoker.github.io/), [Letian Jiang](https://tonnew5418.github.io/), [Chen Zhao](https://zhao-chen.com/), [Bernard Ghanem](https://cemse.kaust.edu.sa/profiles/bernard-ghanem)<br>King Abdullah University of Science and Technology (KAUST)
 
 ## 📰 News
+**[2025.10.6]**  Synthetic objects are available now! [**PIN_Synthetic_Dataset**](https://arxiv.org/abs/2504.00527)<br>
 **[2025.6.2]**  Code and pre-trained models are available now! <br>
 **[2025.5.28]** Code and pre-trained models will be released here. Welcome to **watch** this repository for the latest updates.
 
