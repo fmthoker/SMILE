@@ -55,7 +55,7 @@ Please follow the instructions in [INSTALL.md](INSTALL.md).
 
 We follow [VideoMAE Data preparation](https://github.com/MCG-NJU/VideoMAE/blob/main/DATASET.md) to prepare our datasets (K400 and SSv2). Here we provide our annotation files for those two datasets: [annotation_files](annotation_files). For pretraining, we use training sets (train.csv).
 
-We provide the list of segmented object images  used for pretraining in [object_instances.txt](annotation_files/object_instances.txt). The images will be released later.
+We provide the list of segmented object images  used for pretraining in [object_instances.txt](annotation_files/object_instances.txt). The object images can be downloaded from  [**PIN_Synthetic_Dataset**](https://huggingface.co/datasets/mdorkenw/PIN_Synthetic_Dataset).
 
 
 ## 🔄 Pre-training
