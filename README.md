@@ -6,7 +6,7 @@
 [![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-blue)](https://huggingface.co/fmthoker/SMILE/tree/main/SMILE_MODELS)
 
 
-> [**SMILE: Infusing Spatial and Motion Semantics in Masked Video Learning**](https://openaccess.thecvf.com/content/CVPR2025/papers/Thoker_SMILE_Infusing_Spatial_and_Motion_Semantics_in_Masked_Video_Learning_CVPR_2025_paper.pdf)<br>
+> [**SMILE: Infusing Spatial and Motion Semantics in Masked Video Learning**](https://arxiv.org/abs/2504.00527)<br>
 > [Fida Mohammad Thoker](https://fmthoker.github.io/), [Letian Jiang](https://tonnew5418.github.io/), [Chen Zhao](https://zhao-chen.com/), [Bernard Ghanem](https://cemse.kaust.edu.sa/profiles/bernard-ghanem)<br>King Abdullah University of Science and Technology (KAUST)
 
 ## 📰 News
